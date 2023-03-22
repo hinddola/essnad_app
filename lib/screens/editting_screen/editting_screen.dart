@@ -56,223 +56,225 @@ class EdittingScreen extends StatelessWidget {
                 ),
               ),
               K.sizedBoxH,
-              Container(
-                  width: double.infinity.w,
-                  height: 692.97.h,
-                  decoration: const BoxDecoration(
-                    color: K.whiteColor,
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(30) ,
-                      topRight: Radius.circular(30),
+              Expanded(
+                child: Container(
+                    width: double.infinity.w,
+                    //height: 692.97.h,
+                    decoration: const BoxDecoration(
+                      color: K.whiteColor,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(30) ,
+                        topRight: Radius.circular(30),
+                      ),
                     ),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        const Center(
-                          child: Text(
-                            'إعدادات الحساب',
-                            style: TextStyle(
-                              fontSize: 22,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          const Center(
+                            child: Text(
+                              'إعدادات الحساب',
+                              style: TextStyle(
+                                fontSize: 22,
+                              ),
                             ),
                           ),
-                        ),
-                        K.sizedBoxH,
-                        K.sizedBoxH,
+                          K.sizedBoxH,
+                          K.sizedBoxH,
 
 
-                        // ListView.builder(
-                        //   itemCount: 3,
-                        //     itemBuilder: (BuildContext context , index){
-                        //       return Column(
-                        //         children: [
-                        //           Row(
-                        //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        //             children: const [
-                        //               Icon(
-                        //                 Icons.keyboard_arrow_down,
-                        //                 color: K.gradiantFSTColor,
-                        //               ),
-                        //               Text(
-                        //                 'اللغة',
-                        //                 style: TextStyle(
-                        //                     color: K.gradiantFSTColor,
-                        //                     fontSize: 20
-                        //                 ),
-                        //               )
-                        //             ],
-                        //           ),
-                        //           const Divider(
-                        //             color: K.searchColor,
-                        //             height: 8.0,
-                        //           ),
-                        //         ],
-                        //       );
-                        //     }
-                        // ),
+                          // ListView.builder(
+                          //   itemCount: 3,
+                          //     itemBuilder: (BuildContext context , index){
+                          //       return Column(
+                          //         children: [
+                          //           Row(
+                          //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          //             children: const [
+                          //               Icon(
+                          //                 Icons.keyboard_arrow_down,
+                          //                 color: K.gradiantFSTColor,
+                          //               ),
+                          //               Text(
+                          //                 'اللغة',
+                          //                 style: TextStyle(
+                          //                     color: K.gradiantFSTColor,
+                          //                     fontSize: 20
+                          //                 ),
+                          //               )
+                          //             ],
+                          //           ),
+                          //           const Divider(
+                          //             color: K.searchColor,
+                          //             height: 8.0,
+                          //           ),
+                          //         ],
+                          //       );
+                          //     }
+                          // ),
 
 
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Icon(
-                              Icons.keyboard_arrow_down,
-                              color: K.gradiantFSTColor,
-                            ),
-                            Text(
-                              'اللغة',
-                              style: TextStyle(
-                                  color: K.gradiantFSTColor,
-                                  fontSize: 20
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: const [
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                                color: K.gradiantFSTColor,
                               ),
-                            )
-                          ],
-                        ),
-                        const Divider(
-                          color: K.searchColor,
-                          height: 8.0,
-                        ),
+                              Text(
+                                'اللغة',
+                                style: TextStyle(
+                                    color: K.gradiantFSTColor,
+                                    fontSize: 20
+                                ),
+                              )
+                            ],
+                          ),
+                          const Divider(
+                            color: K.searchColor,
+                            height: 8.0,
+                          ),
 
-                        K.sizedBoxH,
-                        K.sizedBoxH,
+                          K.sizedBoxH,
+                          K.sizedBoxH,
 
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Icon(
-                              Icons.keyboard_arrow_down,
-                              color: K.gradiantFSTColor,
-                            ),
-                            Text(
-                              'تحديث رقم الجوال',
-                              style: TextStyle(
-                                  color: K.gradiantFSTColor,
-                                  fontSize: 20
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: const [
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                                color: K.gradiantFSTColor,
                               ),
-                            )
-                          ],
-                        ),
-                        const Divider(
-                          color: K.searchColor,
-                          height: 8.0,
-                        ),
+                              Text(
+                                'تحديث رقم الجوال',
+                                style: TextStyle(
+                                    color: K.gradiantFSTColor,
+                                    fontSize: 20
+                                ),
+                              )
+                            ],
+                          ),
+                          const Divider(
+                            color: K.searchColor,
+                            height: 8.0,
+                          ),
 
-                        K.sizedBoxH,
-                        K.sizedBoxH,
+                          K.sizedBoxH,
+                          K.sizedBoxH,
 
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Icon(
-                              Icons.keyboard_arrow_down,
-                              color: K.gradiantFSTColor,
-                            ),
-                            Text(
-                              'تغيير كلمة المرور',
-                              style: TextStyle(
-                                  color: K.gradiantFSTColor,
-                                  fontSize: 20
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: const [
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                                color: K.gradiantFSTColor,
                               ),
-                            )
-                          ],
-                        ),
-                        const Divider(
-                          color: K.searchColor,
-                          height: 8.0,
-                        ),
+                              Text(
+                                'تغيير كلمة المرور',
+                                style: TextStyle(
+                                    color: K.gradiantFSTColor,
+                                    fontSize: 20
+                                ),
+                              )
+                            ],
+                          ),
+                          const Divider(
+                            color: K.searchColor,
+                            height: 8.0,
+                          ),
 
 
-                        K.sizedBoxH,
-                        K.sizedBoxH,
-                        K.sizedBoxH,
+                          K.sizedBoxH,
+                          K.sizedBoxH,
+                          K.sizedBoxH,
 
-                        const Center(
-                          child: Text(
-                            'الدعم',
-                            style: TextStyle(
-                              fontSize: 22,
+                          const Center(
+                            child: Text(
+                              'الدعم',
+                              style: TextStyle(
+                                fontSize: 22,
+                              ),
                             ),
                           ),
-                        ),
-                        K.sizedBoxH,
-                        K.sizedBoxH,
+                          K.sizedBoxH,
+                          K.sizedBoxH,
 
 
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Icon(
-                              Icons.keyboard_arrow_down,
-                              color: K.gradiantFSTColor,
-                            ),
-                            Text(
-                              'الدعم الفني',
-                              style: TextStyle(
-                                  color: K.gradiantFSTColor,
-                                  fontSize: 20
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: const [
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                                color: K.gradiantFSTColor,
                               ),
-                            )
-                          ],
-                        ),
-                        const Divider(
-                          color: K.searchColor,
-                          height: 8.0,
-                        ),
+                              Text(
+                                'الدعم الفني',
+                                style: TextStyle(
+                                    color: K.gradiantFSTColor,
+                                    fontSize: 20
+                                ),
+                              )
+                            ],
+                          ),
+                          const Divider(
+                            color: K.searchColor,
+                            height: 8.0,
+                          ),
 
-                        K.sizedBoxH,
-                        K.sizedBoxH,
+                          K.sizedBoxH,
+                          K.sizedBoxH,
 
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Icon(
-                              Icons.keyboard_arrow_down,
-                              color: K.gradiantFSTColor,
-                            ),
-                            Text(
-                              'اتصل بنا',
-                              style: TextStyle(
-                                  color: K.gradiantFSTColor,
-                                  fontSize: 20
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: const [
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                                color: K.gradiantFSTColor,
                               ),
-                            )
-                          ],
-                        ),
-                        const Divider(
-                          color: K.searchColor,
-                          height: 8.0,
-                        ),
+                              Text(
+                                'اتصل بنا',
+                                style: TextStyle(
+                                    color: K.gradiantFSTColor,
+                                    fontSize: 20
+                                ),
+                              )
+                            ],
+                          ),
+                          const Divider(
+                            color: K.searchColor,
+                            height: 8.0,
+                          ),
 
-                        K.sizedBoxH,
-                        K.sizedBoxH,
+                          K.sizedBoxH,
+                          K.sizedBoxH,
 
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Icon(
-                              Icons.keyboard_arrow_down,
-                              color: K.gradiantFSTColor,
-                            ),
-                            Text(
-                              ' اللوائح والأنظمة',
-                              style: TextStyle(
-                                  color: K.gradiantFSTColor,
-                                  fontSize: 20
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: const [
+                              Icon(
+                                Icons.keyboard_arrow_down,
+                                color: K.gradiantFSTColor,
                               ),
-                            )
-                          ],
-                        ),
-                        const Divider(
-                          color: K.searchColor,
-                          height: 8.0,
-                        ),
+                              Text(
+                                ' اللوائح والأنظمة',
+                                style: TextStyle(
+                                    color: K.gradiantFSTColor,
+                                    fontSize: 20
+                                ),
+                              )
+                            ],
+                          ),
+                          const Divider(
+                            color: K.searchColor,
+                            height: 8.0,
+                          ),
 
 
-                      ],
-                    ),
-                  )
+                        ],
+                      ),
+                    )
+                ),
               ),
 
             ],

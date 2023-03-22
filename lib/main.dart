@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
             //scaffoldBackgroundColor: Colors.transparent,
             unselectedWidgetColor: K.checkButtonCollor,
           ),
-          home: SignInScreen(),
+          home: SplashScreen(),
         ),
       ),
     );

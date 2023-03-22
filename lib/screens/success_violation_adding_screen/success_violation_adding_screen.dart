@@ -60,75 +60,77 @@ class SuccessViolationAddingScreen extends StatelessWidget {
                 ),
               ),
               K.sizedBoxH,
-              Container(
-                  width: double.infinity.w,
-                  height: 692.97.h,
-                  decoration: const BoxDecoration(
-                    color: K.whiteColor,
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(30) ,
-                      topRight: Radius.circular(30),
+              Expanded(
+                child: Container(
+                    width: double.infinity.w,
+                    //height: 692.97.h,
+                    decoration: const BoxDecoration(
+                      color: K.whiteColor,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(30) ,
+                        topRight: Radius.circular(30),
+                      ),
                     ),
-                  ),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20.0,top: 40.0),
-                        child: Image.network(
-                          'https://www.kindpng.com/picc/m/628-6282179_nationallink-check-mark-icon-application-success-hd-png.png',
-                          height: 250,
-                          width: 250,
-                        ),
-                      ),
-                      const Text(
-                        'تمت إضافة المخالفة بنجاح',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: K.textColor,
-                          fontWeight: FontWeight.normal,
-                          fontFamily: 'Cairo'
-                        ),
-                      ),
-
-                      K.sizedBoxH,
-                      K.sizedBoxH,
-                      K.sizedBoxH,
-                      K.sizedBoxH,
-                      K.sizedBoxH,
-
-                      Center(
-                        child: Container(
-                          width: 350.w,
-                          decoration: BoxDecoration(
-                            color: K.buttonColor,
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: const [
-                              BoxShadow(
-                                color: Colors.black12,
-                                blurRadius: 4,
-                                offset: Offset(0,4), // Shadow position
-                              ),
-                            ],
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20.0,top: 40.0),
+                          child: Image.network(
+                            'https://www.kindpng.com/picc/m/628-6282179_nationallink-check-mark-icon-application-success-hd-png.png',
+                            height: 250,
+                            width: 250,
                           ),
-                          child: TextButton(
-                            onPressed: (){
-                              Get.to(NavigationBarScreen());
+                        ),
+                        const Text(
+                          'تمت إضافة المخالفة بنجاح',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: K.textColor,
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'Cairo'
+                          ),
+                        ),
 
-                            },
-                            child: const Text(
-                              'العودة للصفحة الرئيسية',
-                              style: TextStyle(
-                                  color: K.whiteColor,
-                                  fontFamily: 'Cairo',
-                                  fontWeight: FontWeight.bold
+                        K.sizedBoxH,
+                        K.sizedBoxH,
+                        K.sizedBoxH,
+                        K.sizedBoxH,
+                        K.sizedBoxH,
+
+                        Center(
+                          child: Container(
+                            width: 350.w,
+                            decoration: BoxDecoration(
+                              color: K.buttonColor,
+                              borderRadius: BorderRadius.circular(10),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Colors.black12,
+                                  blurRadius: 4,
+                                  offset: Offset(0,4), // Shadow position
+                                ),
+                              ],
+                            ),
+                            child: TextButton(
+                              onPressed: (){
+                                Get.to(NavigationBarScreen());
+
+                              },
+                              child: const Text(
+                                'العودة للصفحة الرئيسية',
+                                style: TextStyle(
+                                    color: K.whiteColor,
+                                    fontFamily: 'Cairo',
+                                    fontWeight: FontWeight.bold
+                                ),
                               ),
                             ),
                           ),
                         ),
-                      ),
 
-                    ],
-                  ),
+                      ],
+                    ),
+                ),
               ),
 
             ],
